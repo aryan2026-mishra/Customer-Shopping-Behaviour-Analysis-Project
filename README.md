@@ -1,84 +1,78 @@
 🛒 Customer Shopping Behaviour Analysis (SQL Project)
-📖 Overview
+📊 Project Description
 
-The Customer Shopping Behaviour Analysis project focuses on exploring an e-commerce dataset to uncover key insights about customer purchasing patterns, demographics, sales trends, and promotional impacts.
-Using SQL, this project performs in-depth data cleaning, transformation, and analysis to help businesses make data-driven marketing and sales decisions.
+The Customer Shopping Behaviour Analysis project explores an e-commerce dataset using SQL to uncover valuable business insights.
+It analyzes customer demographics, purchasing trends, and the impact of discounts and subscriptions on sales.
+Through data cleaning and SQL-based queries, the project helps identify revenue-driving products and loyal customers.
+This analysis supports data-driven decisions to enhance marketing and sales strategies.
 
-🎯 Problem Statements / Business Objectives
+🚀 Overview
 
-The project addresses the following analytical objectives:
+This project aims to perform an in-depth SQL analysis on customer shopping data to understand purchasing behavior and business performance.
+The dataset contains information such as customer demographics, items purchased, categories, payment methods, and discount usage.
 
-Identify the most popular product categories and items to determine which products drive the highest sales.
+The analysis focuses on:
 
-Analyze customer demographics (age, gender, location) to understand their influence on purchasing behavior.
+Identifying popular products and categories
 
-Evaluate the impact of discounts and promo codes on overall sales performance.
+Studying demographic influences on purchase behavior
 
-Find relationships between subscription status and purchase frequency to assess customer loyalty.
+Evaluating promotional and discount effectiveness
 
-Determine which payment methods are most preferred and identify seasons driving the highest sales.
+Exploring payment and seasonal sales trends
 
-Retrieve the top 5 best-selling categories contributing the most to revenue.
+🎯 Problem Statements
 
-Calculate the average purchase amount by gender to compare spending habits.
+Identify the most popular product categories and items.
 
-Detect customers who used a promo code but didn’t apply a discount to identify potential inconsistencies.
+Analyze how customer demographics (age, gender, location) influence purchase behavior.
 
-Find the season with the highest average purchase amount for strategic marketing campaigns.
+Determine the impact of discounts and promo codes on sales.
 
-Count total purchases by each payment method to analyze payment preferences.
+Find relationships between subscription status and frequency of purchases.
 
-Identify loyal and high-value customers with more than 5 purchases and review ratings above 4.5.
+Evaluate which payment methods are most used and which seasons drive the highest sales.
 
-🧩 Dataset Information
+Retrieve the top 5 best-selling categories.
 
-Table Name: shopping_behaviour
+Calculate the average purchase amount by gender.
 
-Column Name	Description	Data Type
-customer_id	Unique ID of the customer	INT
-age	Age of the customer	INT
-gender	Gender of the customer	VARCHAR(20)
-item_purchased	Item bought by the customer	VARCHAR(100)
-category	Product category	VARCHAR(50)
-purchase_amount_usd	Purchase amount in USD	DECIMAL(10,2)
-location	Customer’s location	VARCHAR(100)
-size	Product size	VARCHAR(10)
-color	Product color	VARCHAR(50)
-season	Purchase season	VARCHAR(20)
-review_rating	Customer rating (1–5)	FLOAT
-subscription_status	Whether the customer is subscribed	VARCHAR(10)
-shipping_type	Shipping method used	VARCHAR(50)
-discount_applied	Whether a discount was applied	VARCHAR(10)
-promo_code_used	Whether a promo code was used	VARCHAR(10)
-previous_purchases	Number of past purchases	INT
-payment_method	Payment method used	VARCHAR(50)
-frequency_of_purchases	How often the customer purchases	VARCHAR(50)
-🧠 Technologies Used
+Find customers who used a promo code but didn’t apply a discount.
 
-MySQL / SQL Workbench – for data cleaning and querying
+Identify the season with the highest average purchase amount.
 
-Excel / CSV – for initial data source
+Count total purchases made via each payment method.
 
-Power BI (optional) – for data visualization
+Find customers with more than 5 previous purchases and high review ratings (>4.5).
 
-Git & GitHub – for version control and project hosting
+🧮 Technologies Used
 
-⚙️ SQL Operations Performed
+MySQL – for data querying and analysis
 
-Data Cleaning & Transformation
+SQL Workbench / VS Code – for executing SQL scripts
 
-Renamed inconsistent column names to snake_case
+Excel / CSV Dataset – for data import and validation
 
-Standardized data types (e.g., DECIMAL for currency, VARCHAR for categorical data)
+🗂️ Dataset Information
 
-Exploratory Data Analysis (EDA)
+The dataset (shopping_behaviour.csv) contains the following key columns:
 
-Aggregated key metrics using GROUP BY, AVG(), COUNT(), and SUM()
+Customer ID, Age, Gender, Location
 
-Applied logical filters with CASE, WHERE, and sorting with ORDER BY
+Item Purchased, Category, Size, Color, Season
 
-Business Insights Extraction
+Purchase Amount (USD), Review Rating
 
-Identified best-selling products, customer segments, and revenue-driving seasons
+Discount Applied, Promo Code Used, Subscription Status
 
-Detected loyalty and high-value customer behavior
+Payment Method, Frequency of Purchases, Previous Purchases
+
+🧠 Key Insights
+
+Identified top-performing product categories and items.
+
+Analyzed how gender and age impact purchase preferences.
+
+Found that discounts and promo codes significantly affect total sales.
+
+Determined that certain payment methods and seasons drive higher transactions.
